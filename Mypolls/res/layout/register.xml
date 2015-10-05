@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/commonbg"
+    android:orientation="vertical" >
+
+       <EditText
+           style="@style/edittext"
+        android:id="@+id/username_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:hint="@string/user_hint" />
+
+
+    <EditText
+        style="@style/edittext"
+        android:id="@+id/password_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="@string/pwd_hint"
+        android:inputType="textPassword" />
+
+
+    <EditText
+        style="@style/edittext"
+        android:id="@+id/age_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="@string/age_hint"
+        android:inputType="number" />
+
+    <Button
+        style="@style/button"
+        android:id="@+id/button_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_below="@+id/age"
+        android:text="Register" />
+
+    <Button
+        style="@style/button"
+        android:id="@+id/button_clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/age"
+        android:layout_marginLeft="20dp"
+        android:layout_toEndOf="@+id/button_ok"
+        android:layout_toRightOf="@+id/button_ok"
+        android:text="@string/clear" />
+
+</LinearLayout>

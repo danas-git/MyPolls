@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/welcomebg"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.mypolls.MainActivity" >
+
+    <EditText
+        android:id="@+id/user_new"
+        style="@style/edittext"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:hint="@string/user_hint" />
+
+    <EditText
+        android:id="@+id/password_new"
+        style="@style/edittext"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user_new"
+        android:layout_marginTop="20dp"
+        android:hint="@string/pwd_hint"
+        android:inputType="textPassword" />
+
+    <LinearLayout
+        android:id="@+id/loginbuttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password_new"
+      	android:layout_marginTop="30dp"
+      	android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_ok"
+            style="@style/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:text="@string/ok" />
+
+        <Button
+            android:id="@+id/button_clear"
+            style="@style/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:text="@string/clear" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/register_new"
+        style="@style/button"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_below="@+id/loginbuttons"
+        android:text="@string/register_new" 
+        android:layout_marginTop="10dp"/>
+
+</RelativeLayout>

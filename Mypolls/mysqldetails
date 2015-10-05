@@ -1,0 +1,7 @@
+MySQL database will be created in 1 minute. Use these details for your PHP scripts:
+
+$mysql_host = "mysql17.000webhost.com";
+$mysql_database = "a9095771_poll";
+$mysql_user = "a9095771_poll";
+$mysql_password = "almostfame5";
+
